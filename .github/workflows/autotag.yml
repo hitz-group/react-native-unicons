@@ -13,7 +13,8 @@ jobs:
       with:
         token: '${{ secrets.GITHUB_TOKEN }}'
         fetch-depth: 0
-    - uses: butlerlogic/action-autotag@master
-      with:
+    - uses: butlerlogic/action-autotag@1.1.4
+      env:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      with:
         tag_prefix: "v"
