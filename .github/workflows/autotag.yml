@@ -1,9 +1,10 @@
 name: Create Tag on package.json update
 
 on:
-  push:
-    branches:    
-      - master
+  workflow_dispatch:
+  # push:
+  #   branches:    
+  #     - master
 
 jobs:
   build:
