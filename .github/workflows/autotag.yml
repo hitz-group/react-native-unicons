@@ -11,9 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        token: '${{ secrets.GH_AUTH_TOKEN }}'
+        token: '${{ secrets.GITHUB_TOKEN }}'
         fetch-depth: 0
     - uses: butlerlogic/action-autotag@master
       with:
-        GITHUB_TOKEN: "${{ secrets.GH_AUTH_TOKEN }}"
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         tag_prefix: "v"
